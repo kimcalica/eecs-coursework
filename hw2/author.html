@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>The Brothers Grimm</title>
+       <link rel="stylesheet" href="assets/style.css">
+       <style>
+body {
+    background-color: silver;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+#table {
+    margin-left: auto;
+    margin-right: auto;
+}
+#bookcover {
+    float: left;
+    width: 100%;
+}
+.book {
+    background: white;
+    color: black;
+    padding: 50px;
+}
+.book * {
+    position: relative;
+}
+.book header {
+    padding-bottom: 8px;
+}
+.book header * {
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+.book .title {
+    font-family: cursive;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    margin: 0 0 1px 0;
+    padding: 3px;
+    position: relative;
+    text-align: center;
+}
+.book {
+    margin: 10px;
+    position: relative;
+}
+.book:before {
+    background-color: maroon;
+    border-radius: 10px;
+    bottom: -16px;
+    content: '';
+    left: -16px;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    z-index: -1;
+}
+.book:after {
+    background: linear-gradient(to right, transparent 95%, black);
+    bottom: -16px;
+    content: '';
+    left: 50%;
+    position: absolute;
+    top: -16px;
+    width: 60px;
+    transform: translate(-50%,0);
+}
+.book > * {
+    column-count: 2;
+    column-gap: 80px;
+    position: relative;
+    z-index: 1;
+}
+.menu {
+    text-align: center;
+    background-color: lightblue;
+}
+.menu a {
+    text-decoration: none;
+}
+#grim, #fairytales{
+    height: 320px;
+    width: 250px;
+    margin-left: 30%;
+    display: inline-block;
+    border: 2px solid black;
+}
+.works {
+  text-align:center;
+  border: 2px solid black;
+  padding: 6px;
+  background-color: bisque;
+  box-shadow: 5px 10px 8px #888888;
+}
+</style>
+<body>
+  <div id="page">
+    <div id="bookcover">
+      <section class="book">
+        <header>
+          <nav class="menu">
+            <p>
+              <a href=""> Authors </a>
+              <a href=""> Short Stories </a>
+              <a href=""> Children </a>
+              <a href=""> Favorites </a>
+              <a href=""> Poetry </a>
+              <a href=""> Novels </a>
+              <a href=""> Features </a>
+             </p>
+             </nav>
+            </header>
+            <article>
+            <h2 class="title">
+                BROTHERS GRIMM
+              </h2>
+              <hr>
+              <img id="grim" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Grimm.jpg/220px-Grimm.jpg" alt="Jacob and Wilhem Grimm">
+              <img id="fairytales" src="https://prodimage.images-bn.com/pimages/9781435166875_p0_v1_s550x406.jpg" alt="Grimm's Fairy Tales">
+              <ul class="works" style="list-style-type:none;">
+              <h3> LIST OF NOTABLE WORKS </h3>
+              <li><a href=""> Cinderella </a></li>
+              <li><a href=""> Hansel and Gretel </a></li>
+              <li><a href="story_detail.html" target="_blank"> Rapunzel </a></li>
+              <li><a href=""> The Elves and the Shoemaker </a></li>
+              <li><a href=""> The Hare and the Hedgehog </a></li>
+              <li><a href=""> The Golden Goose </a></li>
+              <li><a href=""> The Tale of Aladdin </a></li>
+            </ul>
+            <hr>
+            <p>
+              Jacob Grimm and Wilhelm Grimm are two German brothers that collaborated and
+              produced some of the best-known folktales in the 19th century.
+              They were both philologists, lexicographers and cultural researchers. Their stories,
+              while called "Fairy Tales", are often of the grim nature and might not be suitable
+              for children.
+            </p>
+            <p>
+              They attended University of Marburg where they researched early history
+              of German language and literature. The resurgence of Romanticism in the 18th century
+              revived interest in traditional folk lore.
+              They popularized traditional oral folktales like Cinderella, The Frog Prince, Hansel and Gretel, <a href="story_detail.html" target="_blank">Rapunzel</a>,
+              Sleeping Beauty, and Snow White.
+            </p>
+            <hr>
+            <footer>
+              <ol id="sources">
+            <li> “The Brothers Grimm.” Short Stories and Classic Literature, americanliterature.com/author/the-brothers-grimm.</li>
+            <li> Denecke, Ludwig. “Brothers Grimm.” Encyclopædia Britannica, Encyclopædia Britannica, Inc., 6 Dec. 2018, www.britannica.com/biography/Brothers-Grimm.</li>
+          </ol>
+        </footer>
+      </article>
+      </section>
+      </div>
+      </div>
+      </body>
+  </html>

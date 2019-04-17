@@ -1,0 +1,122 @@
+<html lang="en">
+   <head>
+       <title>American Literature</title>
+       <link rel="stylesheet" href="assets/style.css">
+      <style>
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "section_1 section_2 section_2"
+    "section_1 section_3 section_4"
+    "section_1 section_5 section_6";
+}
+.wrapper div {
+   color: white;
+   font-family: 'Arial';
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+.grid1 {
+  grid-area: section_1;
+  background: sienna;
+}
+.grid2 {
+  grid-area: section_2;
+  background: lightblue;
+}
+.grid3 {
+  grid-area: section_3;
+  background: yellow;
+}
+.grid4 {
+  grid-area: section_4;
+  background: red;
+}
+.grid5 {
+  grid-area: section_5;
+  background: green;
+}
+.grid6 {
+  grid-area: section_6;
+  background: brown;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: burlywood;
+  padding-top: 20px;
+  border: 2px solid black;
+  height: 280px;
+  width: 220px;
+}
+.card img {
+  border: 2px solid black;
+  height:220px;
+  width: 180px;
+}
+.card:hover {
+  box-shadow: 0 40px 80px 0 rgba(0,0,0,0.2);
+}
+  </style>
+  </head>
+  <body>
+  <div class="wrapper">
+    <div class="grid1">
+      <h1> American Literature </h1>
+      <nav>
+        <a href=""> Authors </a>
+        <a href=""> Short Stories </a>
+        <a href=""> Children </a>
+        <a href=""> Favorites </a>
+        <a href=""> Poetry </a>
+        <a href=""> Novels </a>
+        <a href=""> Features </a>
+        <a href=""><img class="home" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFKNGIM3Z4cGp6Z0xFCpm1n6cuK36FYCpr4Y9cj6lPNGgev--Y" alt="homeicon"></a>
+        </nav>
+        </div>
+        <article>
+        <div class="grid2">
+          <h2> Purpose </h2>
+          <p> A digital collection of American Literature, feauturing Children's Stories to American Classics </p>
+          </div>
+          <div class="grid3">
+            <div class="card">
+            <a href="story_list.html" target="_blank"><img src="https://assets.americanliterature.com/al/images/story/peter-rabbit-240.jpg" alt="Tale of Peter Rabbit"></a>
+            <div class="label">
+            <h3><a href="story_list.html" target="_blank">Children's Stories</a></h3>
+            </div>
+            </div>
+            </div>
+          <div class="grid4">
+            <div class="card">
+              <a href="" target="_blank"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-piles-of-french-novels-vincent-van-gogh.jpg" alt="books">
+              </a>
+              <div class="label">
+                <h3><a href="" target="_blank">Stories</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid5">
+            <div class="card">
+              <a href="" target="_blank"><img src="https://www.hrc.utexas.edu/collections/guide/images/art_large.jpg" alt="author"></a>
+              <div class="label">
+                <h3><a href="" target="_blank">Authors</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="grid6">
+            <div class="card">
+              <a href="" target="_blank"><img src="https://assets.americanliterature.com/al/images/features/teachers-image-300x420.jpg" alt="resources"></a>
+              <div class="label">
+                <h3><a href="" target="_blank">Resources</a></h3>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      </body>
+</html>

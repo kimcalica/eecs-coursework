@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>American Literature</title>
+       <link rel="stylesheet" href="assets/style.css">
+      <style>
+.navimg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEX///+AAAB9AADr1dWgYWGHIiK9fX2HAADhycnt3t7kzc2UNTXl0NDdwcHiy8uGAACcRkaZPj6TMTGSIyOOHByZPDySLCyRJyeQEBCnW1vz5+f27u6MAACNGBiMERGEGRnMnZ3AhITvwomiAAAC6UlEQVR4nO3a63baMBCFUTq0jbFxwiUhKc2lff+XLE5KYYwvGtVY46zv/JfNXoAO1jCbRWb/+/uo+RX7QqMzf5NR83V84bcvYwYhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBAhQoQIESJEiBBhRNbFJxeu8rKQTyyUdT6blY8RxIkIZbeslt7e2InTEMrz4mNtZidOQig3i+Pi7M5KnIJQtovT6tt7I3ECQnmYny8vNzbiBISrpV5vLA33Qlnl9QuUOwvRu1CK5eUVTNuNc6E8LZouYSkN38KzmtAxEF0L5aUFeCC+hhI9C6VoBR6IoduNZ2G9JnRCS8OvsKEmdAKr361QHjrfwSrlSwjRq1Du5/1XCnqYcipsrQmdkNLwKfz3PNiX7LmX6FIom0BgSGm4FK57N5lTekvDo7CvJnT6SsOfUCzvYJVy20l0J5THgJrQyTsfprwJA2tCp7M0nAmjgN1EX0LZRQEPH9T203BfwrX5O3hM+47qSmirCZ3WXnQkfB++xKdtbONHKBtjD9bTst24EQb/2G5PM9GLMLImdBrPUZ0I1fAlPk1jGx/C2vAlPg2l4UPYfapmyWVpeBD2nqpZcjG2cSBsHL7EJ3sSZ0J5HWSTOaVWGsmFg9SEjiamFnYMX+KjxjaJhVIMVBM65ydwiYXD1YTOWWkkFQ5aEzqn6k8pDBi+xCc7jm0SCoOGL/E5jm3SCa9QEzp/SyOZcIDnwb58EFMJDcOX+GTVwUYqofXoPi5VaSQSXq8mdA6lkUT4n6dqlpTbFMK37VVrQie/SyBs/q/atZL9GPNu79nvx73fz9iFfwCTlm5fiPaotAAAAABJRU5ErkJggg==);
+  min-height: 100%;
+  width: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+.leftnav {
+  height: 100%;
+  width:197px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  z-index:0;
+  display: inline-block;
+  border: 3px solid black;
+}
+.leftnav a{
+  padding: 6px 6px 6px 32px;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  display:block;
+  color: black;
+  text-shadow:		-1px -1px 0 silver,
+		1px -1px 0 silver,
+		-1px 1px 0 silver,
+		1px 1px 0 silver;
+}
+.leftnav a:hover{
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.home {
+  max-width:100px;
+  max-height: 100px;
+  display: block;
+  margin-left: 15px;
+}
+.content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height:100%;
+  width: 1250px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left:197px;
+  bottom: 0;
+  margin-top: 0px;
+  margin-bottom:0px;
+  display: inline-block;
+}
+h1 {
+  font-size: 40px;
+  font-family: cursive;
+}
+.bimg {
+  background: url(http://cdn.thinglink.me/api/image/629079331997483009/1024/10/scaletowidth/0/0/1/1/false/true?wait=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: burlywood;
+  padding-top: 20px;
+  border: 2px solid black;
+  height: 280px;
+  width: 220px;
+}
+.card img {
+  border: 2px solid black;
+  height:220px;
+  width: 180px;
+}
+.card:hover {
+  box-shadow: 0 40px 80px 0 rgba(0,0,0,0.2);
+}
+.section1 {
+  padding-top: 50px;
+}
+</style>
+   </head>
+   <body>
+     <div class="navimg">
+       <div class="container">
+    <div class="leftnav">
+     <nav>
+     <p>
+     <a href=""> Authors </a>
+     <br>
+     <a href=""> Short Stories </a>
+     <br>
+     <a href=""> Children </a>
+     <br>
+     <a href=""> Favorites </a>
+     <br>
+     <a href=""> Poetry </a>
+     <br>
+     <a href=""> Novels </a>
+     <br>
+     <a href=""> Features </a>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <a href"" target="_blank">
+       <img class="home" src="https://imageog.flaticon.com/icons/png/512/25/25694.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" alt="homeicon">
+     </a>
+      </p>
+    </nav>
+  </div>
+</div>
+</div>
+<div class="bimg">
+     <article class="content">
+    <header>
+     <h1> American Literature </h1>
+   </header>
+   <header>
+     <h2> Purpose </h2>
+   </header>
+     <p> A digital collection of American Literature, featuring children's stories to American classics</p>
+     <table style="width: 100%">
+       <div class="section1">
+       <tr>
+         <th>
+           <div class="card">
+           <a href="story_list.html" target="_blank">
+             <img src="https://assets.americanliterature.com/al/images/story/peter-rabbit-240.jpg" alt="Tale of Peter Rabbit" style="max-width:220px;"></a>
+             <div class="label">
+               <h3> <a href="story_list.html" target="_blank">Children's Stories</a></h3>
+             </div>
+         </div>
+         </th>
+         <th>
+           <div class="card">
+           <a href="" target="_blank">
+             <img src="https://assets.americanliterature.com/al/images/story/the-selfish-giant-240.jpg" alt="Great Short Stories" style="max-width:220px;">
+             </a>
+           <div class="label">
+              <h3> <a href="" target="_blank"> Great Short Stories </a></h3>
+            </div>
+          </div>
+          </th>
+          <th>
+            <div class="card">
+            <a href="" target="_blank">
+              <img src="https://assets.americanliterature.com/al/images/story/the-lady-or-the-tiger-frontis.jpg" alt="Stories for Students" style="max-height:250px;">
+              </a>
+              <div class="label">
+              <h3> <a href="" target="_blank"> Stories for Students </a></h3>
+            </div>
+          </div>
+           </th>
+           <th>
+             <div class="card">
+               <a href="" target="_blank">
+                 <img src="https://assets.americanliterature.com/al/images/book/the-awakening.jpg" alt="Great Novels" style="max-height:260px;">
+                 </a>
+                 <div class="label">
+                <h3> <a href="" target="_blank"> Great Novels </a></h3>
+              </div>
+            </div>
+              </th>
+            </div>
+            <div class="section2">
+          <tr>
+             <th>
+               <div class="card">
+               <a href="" target="_blank">
+                 <img src="https://assets.americanliterature.com/al/images/author/edna-millay.jpg" alt="Great Authors" style="max-width:220px;max-height:260px;">
+                 </a>
+                 <div class="label">
+                  <h3> <a href="" target="_blank"> Great Authors </a></h3>
+                </div>
+              </div>
+              </th>
+              <th>
+                <div class="card">
+                <a href="" target="_blank">
+                  <img src="https://assets.americanliterature.com/al/images/poem/magdalen-walks.jpg" alt= "Great Poetry" style="max-width:230px;max-height:280px;">
+                  </a>
+                  <div class="label">
+                  <h3> <a href="" target="_blank"> Great Poetry </a></h3>
+                </div>
+                  </div>
+               </th>
+               <th>
+                 <div class="card">
+                 <a href="" target="_blank">
+                   <img src="https://assets.americanliterature.com/al/images/features/teachers-image-300x420.jpg" alt="Teacher Resources" style="max-width:200px;max-height:220px;">
+                   </a>
+                   <div class="label">
+                   <h3> <a href="" target="_blank"> Teacher Resources </a></h3>
+                 </div>
+               </div>
+                </th>
+                <th>
+                  <div class="card">
+                  <a href="" target="_blank">
+                    <img src="https://assets.americanliterature.com/al/images/story/eastman-johnson-reading-boy-1863.jpg" alt="Short Story of the Day" style="max-width:210px;max-height:210px;">
+                    </a>
+                    <div class="label">
+                    <h3> <a href="" target="_blank"> Short Story of the Day </a></h3>
+                  </div>
+                </div>
+                 </th>
+               </div>
+               </table>
+             </article>
+           </div>
+   </body>
+</html>

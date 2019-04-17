@@ -1,0 +1,84 @@
+<html lang="en">
+   <head>
+       <title>American Literature</title>
+       <link rel="stylesheet" href="assets/style.css">
+       <style>
+
+/*https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228*/
+document,
+body {
+   margin: 0px;
+}
+.wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas:
+      "section_1 section_2 section_2"
+      "section_1 section_3 section_4"
+      "section_1 section_5 section_6";
+   min-height: 100vh;
+}
+
+.wrapper div {
+   color: white;
+   font-family: 'Arial';
+   font-size: 3em;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+.item-1 {
+   grid-area: section_1;
+   background: #177e89;
+}
+.item-2 {
+   grid-area: section_2;
+   background: #05464d;
+}
+.item-3 {
+   grid-area: section_3;
+   background: #598381;
+}
+.item-4 {
+   grid-area: section_4;
+   background: #8e936d;
+}
+.item-5 {
+   grid-area: section_5;
+   background: #a2ad59;
+}
+.item-6 {
+  grid-area: section_6;
+  background: lightblue;
+}
+.nav {
+
+}
+</style>
+<body>
+  <div class="wrapper">
+  <div class="item-1">
+    <div class="nav">
+    <h1> American Literature </h1>
+        <nav>
+          <a href=""> Authors </a>
+          <a href=""> Short Stories </a>
+          <a href=""> Children </a>
+          <a href=""> Favorites </a>
+          <a href=""> Poetry </a>
+          <a href=""> Novels </a>
+          <a href=""> Features </a>
+          <a href=""><img class="home" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFKNGIM3Z4cGp6Z0xFCpm1n6cuK36FYCpr4Y9cj6lPNGgev--Y" alt="homeicon"></a>
+          </nav>
+        </div>
+        </div>
+  <div class="item-2">2</div>
+  <div class="item-3">3</div>
+  <div class="item-4">4</div>
+  <div class="item-5">5</div>
+  <div class="item-6">6</div>
+</div>
+</body>
+</html>
