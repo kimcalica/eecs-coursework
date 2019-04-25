@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Brothers Grimm</title>
+        <link rel="stylesheet" href="styles.css">
+<style>
+    @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+    h2, header {
+      font-family: 'Raleway', sans-serif;
+    }
+    h2 {
+      text-align: center;
+      font-family: 'Raleway', cursive;
+      font-size: 46px;
+      letter-spacing: 1.5px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: silver;
+    }
+    nav, p {
+      font-family: 'Roboto' , sans-serif;
+    }
+    #sources {
+      font-family: 'robot' , sans-serif;
+    }
+    .menu div {
+      background: #BD0000;
+      min-height: 100%;
+      border: solid black 2px;
+    }
+    div nav {
+      font-size: 20px;
+      word-spacing: 3px;
+    }
+    section article {
+      padding: 20px;
+    }
+    body {
+      background: silver;
+    }
+    .book1, .book2 {
+      background-color: white;
+      line-height: 1.5;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template rows: auto;
+      grid-template-areas:
+        "a a"
+        "b c";
+      min-height: 100vh;
+    }
+    .menu {
+      grid-area: a;
+      text-align: center;
+    }
+    .book1 {
+      grid-area: b;
+      border: solid 2px black;
+    }
+    .book2 {
+      grid-area: c;
+      border: solid 2px black;
+    }
+    .
+    div nav {
+      background: lightblue;
+      width: 100%;
+    }
+    .content1 {
+      border: #804D15 solid 10px;
+      border-right: 0;
+    }
+    .content2 {
+      border: #804D15 solid 10px;
+      border-left: 0;
+    }
+    .works {
+      text-align:center;
+      border: 2px solid black;
+      padding: 6px;
+      background-color: bisque;
+      box-shadow: 5px 10px 8px #888888;
+    }
+    #grim, #fairytales{
+        height: 470px;
+        width: 320px;
+        border: 2px solid black;
+    }
+    @media (max-width: 1024px) {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template rows: auto;
+        grid-template-areas:
+          "a a"
+          "b c";
+        min-height: 100vh;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template rows: auto;
+        grid-template-areas:
+          "a"
+          "b"
+          "c";
+        min-height: 100vh;
+      }
+      .content1, .content2 {
+        border: solid 2px black;
+      }
+    }
+</style>
+    </head>
+<body>
+<div class="container">
+
+    <section class="menu">
+      <div>
+        <nav>
+          <a href="index.html" target="_blank"><i class="fas fa-home"></i> </a>
+          <a href=""> Authors </a>
+          <a href=""> Short-Stories </a>
+          <a href=""> Children </a>
+          <a href=""> Favorites </a>
+          <a href=""> Poetry </a>
+          <a href=""> Novels </a>
+          <a href=""> Features </a>
+        </nav>
+      </div>
+    </section>
+    <main class="content1">
+    <section class="book1">
+      <article>
+      <h2> BROTHERS GRIMM </h2>
+      <hr>
+      <img id="grim" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Grimm.jpg/220px-Grimm.jpg" alt="Jacob and Wilhem Grimm">
+      <img id="fairytales" src="https://prodimage.images-bn.com/pimages/9781435166875_p0_v1_s550x406.jpg" alt="Grimm's Fairy Tales">
+    </p>
+  </article>
+</section>
+</main>
+
+<main class="content2">
+  <section class="book2">
+    <article>
+      <ul class="works" style="list-style-type:none;">
+      <h3> LIST OF NOTABLE WORKS </h3>
+      <li><a href=""> Cinderella </a></li>
+      <li><a href=""> Hansel and Gretel </a></li>
+      <li><a href="story_detail.html" target="_blank"> Rapunzel </a></li>
+      <li><a href=""> The Elves and the Shoemaker </a></li>
+      <li><a href=""> The Hare and the Hedgehog </a></li>
+      <li><a href=""> The Golden Goose </a></li>
+      <li><a href=""> The Tale of Aladdin </a></li>
+    </ul>
+    <hr>
+    <p>
+      Jacob Grimm and Wilhelm Grimm are two German brothers that collaborated and
+      produced some of the best-known folktales in the 19th century.
+      They were both philologists, lexicographers and cultural researchers. Their stories,
+      while called "Fairy Tales", are often of the grim nature and might not be suitable
+      for children.
+    </p>
+    <p>
+      They attended University of Marburg where they researched early history
+      of German language and literature. The resurgence of Romanticism in the 18th century
+      revived interest in traditional folk lore.
+      They popularized traditional oral folktales like Cinderella, The Frog Prince, Hansel and Gretel, <a href="story_detail.html" target="_blank">Rapunzel</a>,
+      Sleeping Beauty, and Snow White.
+    </p>
+    <hr>
+    <footer>
+      <ol id="sources">
+    <li> “The Brothers Grimm.” Short Stories and Classic Literature, americanliterature.com/author/the-brothers-grimm.</li>
+    <li> Denecke, Ludwig. “Brothers Grimm.” Encyclopedia Britannica, Encyclopedia Britannica, Inc., 6 Dec. 2018, www.britannica.com/biography/Brothers-Grimm.</li>
+  </ol>
+</footer>
+  </article>
+</section>
+</main>
+
+
+</div>
+    </body>
+</html>

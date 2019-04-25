@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>American Literature</title>
+       <link rel="stylesheet" href="assets/style.css">
+  <style>
+    @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+    .menu, .menu2, .card1, .card2, .card3, .card4 {
+      padding: 5px;
+    }
+    body {
+      background: url(http://cdn.thinglink.me/api/image/629079331997483009/1024/10/scaletowidth/0/0/1/1/false/true?wait=true);
+    }
+    .container {
+       display: grid;
+       grid-template-columns: 0.3fr 1fr 1fr;
+       grid-template-rows: 0.5fr 1fr 1fr;
+       grid-template-areas:
+          "a b b"
+          "a c d"
+          "a e f";
+       min-height: 100vh;
+    }
+    .menu {
+       grid-area: a;
+       left:0;
+    }
+    .menu2 {
+       grid-area: b;
+    }
+    .card1 {
+       grid-area: c;
+    }
+    .card2 {
+       grid-area: d;
+    }
+    .card3 {
+       grid-area: e;
+    }
+    .card4 {
+       grid-area:f;
+    }
+    .menu div {
+       background: #BD0000;
+       min-height: 100%;
+       border: solid black 4px;
+    }
+    div nav{
+      padding: 6px 6px 6px 32px;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      display:block;
+      color: black;
+      text-shadow:		-1px -1px 0 silver,
+        1px -1px 0 silver,
+        -1px 1px 0 silver,
+        1px 1px 0 silver;
+      line-height: 40px;
+    }
+    div h1 {
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      text-shadow:		-1px -1px 0 silver,
+        1px -1px 0 silver,
+        -1px 1px 0 silver,
+        1px 1px 0 silver;
+      font-size: 30px;
+    }
+    div a:hover {
+      color: white;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    nav a {
+      text-align: center;
+    }
+    .menu2 h2 {
+      font-family: 'Raleway' , sans-serif;
+      font-size: 25px;
+      text-shadow: -1px -1px 0 silver,
+        1px -1px 0 silver,
+        -1px 1px 0 silver,
+        1px 1px 0 silver;
+    }
+    .menu2 p {
+      font-family: 'Roboto' , sans-serif;
+      font-size: 20px;
+    }
+    body {
+       font-family: "Roboto", sans-serif;
+    }
+    button {
+       border: none;
+       background: transparent;
+    }
+    .card {
+       margin: 40px;
+       border-radius: 2px;
+       overflow: hidden;
+       background-color: #503001;
+       height: 40%;
+       width: 450px;
+       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+       border: solid black 2px;
+    }
+    .card_image {
+       background-size: cover;
+       background-image: url(https://assets.readbrightly.com/wp-content/uploads/2017/05/books-that-celebrate-reading-feat-v1.jpg);
+       background-repeat: no-repeat;
+       width: 100%;
+       height: 100%;
+       display: block;
+       border-radius: 1px 1px 0 0;
+       max-height: 75%;
+    }
+    .card_image2 {
+       background-size: cover;
+       background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/2-piles-of-french-novels-vincent-van-gogh.jpg);
+       background-repeat: no-repeat;
+       width: 100%;
+       height: 100%;
+       display: block;
+       border-radius: 1px 1px 0 0;
+       max-height: 75%;
+    }
+    .card_image3 {
+      background-size: cover;
+      background-image: url(https://www.hrc.utexas.edu/collections/guide/images/art_large.jpg);
+      background-repeat: no-repeat;
+      background-position: top center;
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 1px 1px 0 0;
+      max-height: 75%;
+    }
+    .card_image4 {
+      background-size: cover;
+      background-image: url(https://assets.americanliterature.com/al/images/features/teachers-image-300x420.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 1px 1px 0 0;
+      max-height: 75%;
+    }
+    .card_title {
+       font-size: 24px;
+       color: #fff;
+       margin-top: -165px;
+       padding: 0 16px;
+       font-weight: 400;
+       white-space: nowrap;
+       text-overflow: ellipsis;
+       overflow: hidden;
+       text-shadow: 1px 1px 3px #000;
+    }
+    .card_text {
+       font-size: 15px;
+       display: block;
+       margin-top: 140px;
+       padding: 16px;
+       line-height: 1.6;
+       color: #f1f1f1;
+       overflow: hidden;
+    }
+    .card-big {
+       box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+          0 17px 17px 0 rgba(0, 0, 0, 0.15);
+       height: 4px;
+       min-height: 304px;
+    }
+    @media (max-width: 1024px) {
+      .container {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-template-areas:
+           "a b b"
+           "a c d"
+           "a e f";
+        min-height: 100vh;
+      }
+    }
+    @media (max-width: 480px) {
+      .container {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "a c"
+          "a d"
+          "a e"
+          "a f";
+          min-height: 100vh;
+      }
+      .menu2 {
+        display: none;
+      }
+    }
+    </style>
+  </head>
+<body>
+  <div class="container">
+
+     <section class="menu">
+        <div>
+          <h1> American Literature </h1>
+          <nav>
+            <a href=""> Authors </a>
+            <br>
+            <a href=""> Short Stories </a>
+            <br>
+            <a href=""> Children </a>
+            <br>
+            <a href=""> Favorites </a>
+            <br>
+            <a href=""> Poetry </a>
+            <br>
+            <a href=""> Novels </a>
+            <br>
+            <a href=""> Features </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="index.html" target="_blank"><i class="fas fa-home fa-4x"></i> </a>
+            </nav>
+        </div>
+     </section>
+
+     <section class="menu2">
+        <div>
+          <h2>Purpose</h2>
+          <p> A digital collection of American literature, featuring children's stories to American classics </p>
+        </div>
+     </section>
+
+     <article class="card1">
+       <div class="card card-big">
+   <div class="card_image"></div>
+   <h2 class="card_title">
+      <a href="story_list.html" target="_blank">Children's Stories</a>
+   </h2>
+   <p class="card_text">
+      From bed-time stories to popular kid's series, enjoy a catalog of relaxing children's novels.
+   </p>
+        </div>
+     </article>
+
+     <article class="card2">
+       <div class="card card-big">
+   <div class="card_image2"></div>
+   <h2 class="card_title">
+      <a href="">Stories</a>
+   </h2>
+   <p class="card_text">
+      Sit down and enjoy thrilling narrative, or a heart-wrenching drama.
+   </p>
+        </div>
+     </article>
+
+     <article class="card3">
+       <div class="card card-big">
+   <div class="card_image3"></div>
+   <h2 class="card_title">
+      <a href="">Authors</a>
+   </h2>
+   <p class="card_text">
+      Learn about the writers and browse through their other works.
+   </p>
+        </div>
+     </article>
+
+     <article class="card4">
+       <div class="card card-big">
+       <div class="card_image4"></div>
+       <h2 class="card_title">
+          <a href="">Resources</a>
+       </h2>
+       <p class="card_text">
+          Didn't find what you need? See what else we have to offer.
+       </p>
+            </div>
+    </article>
+  </div>
+</body>
+</html>
