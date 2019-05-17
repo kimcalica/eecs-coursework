@@ -1,0 +1,16 @@
+.song {
+  width: 350;
+  height: 100;
+}
+.photo {
+  height: 350;
+  width: 350;
+  background-size: cover;
+}
+.card {
+  border: solid 2px #000;
+  width: 350;
+  margin: 40px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  display: inline-block;
+}
