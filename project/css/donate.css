@@ -1,0 +1,36 @@
+/* #my_form {
+  visibility: hidden;
+} */
+.active {
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv {
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+}
+
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  border: 2px solid black;
+  display: inline-block;
+}
+
+.timer_text{
+  padding-top: 5px;
+  font-size: 16px;
+}
