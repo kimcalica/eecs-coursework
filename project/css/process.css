@@ -1,0 +1,99 @@
+body {
+  font: 300 15px;
+  /* font-family: 'Alfa Slab One'; */
+  font-family: 'Raleway', sans-serif;
+  line-height: 2;
+}
+h1 {
+  font-size: 55px;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Lato', sans-serif;
+}
+h2 {
+  font-size: 35px;
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  margin-bottom: 60px;
+  font-family: 'Lato', sans-serif;
+}
+h3 {
+  font-size: 27px;
+  line-height: 1.375em;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 18px;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #1B1313;
+  z-index: 9999;
+  border: 0;
+  font-size: 13px;
+  line-height: 1.42857143;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+  font-size: 45px;
+  /* font-family: 'Alfa Slab One'; */
+  font-family: 'Carter One', cursive;
+  color: white;
+}
+.jumbotron {
+  /* background-color: #f4511e; */
+  background: linear-gradient(to bottom left, #ff9933 0%, #ff0000 100%);
+  color: white;
+  text-align: center;
+  /* font-family: 'Alfa Slab One'; */
+  height: 350px;
+}
+.container-bg {
+  background-color: #F8F8F8;
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.logo {
+  font-size: 280px;
+  color: #FF6B07;
+}
+.school {
+  height: 420px;
+  width: 420px;
+}
+.button2 {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 10px 20px;
+  display: block;
+  font-family: 'Alfa Slab One';
+  font-weight: bold;
+  color:#7f7f7f;
+  text-decoration: none;
+  border:1px solid #a7a7a7;
+  width: 205px;
+  margin:0px auto;
+  text-transform: uppercase;
+}
+footer {
+  font-size: 20px;
+  margin-bottom: 0px;
+  background-color: #1B1313;
+  color: white;
+}
+.footer_text {
+  /* list-style-type: none; */
+  color: white;
+}
+.footer_title {
+  font-size: 25px;
+}
+a:hover {
+  color:white !important;
+}

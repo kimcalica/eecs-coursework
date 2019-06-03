@@ -2,24 +2,36 @@
   <html lang="en">
     <head>
       <title>Zurila:Donation</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/donate.css">
-      <style>
-
-      </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
 <body>
-  <div class="container">
 
-    <section class="menu">
-      <div>
-        <nav>
-          <a href="mission.html" target="_blank">Mission</a>
-          <a href="process.html" target="_blank">Process</a>
-          <a href="" target="_blank">Partners</a>
-          <a href="" target="_blank">Log In</a>
-          <a href="signup.html" target="_blank">Sign-Up</a>
-        </nav>
-      </div>
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <p class="navbar-brand">Z</p>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="process.html" target="_blank">Process</a></li>
+            <li><a href="" target="_blank">Partners</a></li>
+            <li><a href="" target="_blank">Log In</a></li>
+            <li><a href="signup.html" target="_blank">Sign-Up</a></li>
+          </ul>
+        </div>
+        </div>
+          </nav>
     <!-- <form id="my_form">
         Login <br>
         Email: <input type="text" name="" id="email"><br>
@@ -28,37 +40,40 @@
         </form> -->
        <!-- Donation Box -- only appears when log-in valid-->
 
-       <div class="active">
-         <h2> Next Drawing In: </h2>
-         <div id="clockdiv">
-           <div>
-             <span class="days"></span>
-             <div class="time_text">Days</div>
-            </div>
-             <div>
-               <span class="hours"></span>
-               <div class="time_text">Hours</div>
+       <div class="jumbotron">
+         <h2> NEXT DRAWING IN: </h2>
+             <div id="clockdiv">
+               <div>
+               	 <span class="days" id="day"></span>
+               	 <div class="timer_text">Days</div>
+               </div>
+               <div>
+               	 <span class="hours" id="hour"></span>
+               	 <div class="timer_text">Hours</div>
+               </div>
+               <div>
+               	 <span class="minutes" id="minute"></span>
+               	 <div class="timer_text">Minutes</div>
+               </div>
+               <div>
+               	 <span class="seconds" id="second"></span>
+               	 <div class="timer_text">Seconds</div>
+               </div>
              </div>
-             <div>
-                <span class="minutes"></span>
-               <div class="time_text">Minutes</div>
-             </div>
-             <div>
-              <span class="seconds"></span>
-               <div class="time_text">Seconds</div>
+                <div class="prize-text">
+                  <p id="timeover"></p>
+                  <p class="prizepool"> The Prize Pool is:</p>
+                  <p class="donation">2.00</p>
+                </div>
             </div>
 
-            <section class="results">
-              <!-- Donations Go here -->
-              </section>
-              
-          <form id="second_form">
-      <input type="text" name="" id="donation">
-      <button type="button" class="donate">Donate</button>
-        </form>
-      </div>
 
-
+                  <!-- Donation Coins -->
+                  <h2> DONATE </h2>
+                  <button><div class="coin bronze"><p>1&cent;</p></div></button>
+                  <button><div class="coin silver"><p>5&cent;</p></div></button>
+                  <button><div class="coin gold"><p>10&cent;</p></div></button>
+                  <button><div class="coin gold2"><p>25&cent;</p></div></button>
 
 
 </div>

@@ -2,79 +2,118 @@
 <html lang="en">
   <head>
     <title>Zurila</title>
-    <link rel="stylesheet" href="assets/style.css">
-      <style>
-
-      </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 <body>
-<div class="container">
 
-  <section class="menu">
-    <div>
-      <nav>
-        <a href="mission.html" target="_blank">Mission</a>
-        <a href="process.html" target="_blank">Process</a>
-        <a href="" target="_blank">Partners</a>
-        <a href="" target="_blank">Log In</a>
-        <a href="signup.html" target="_blank">Sign-Up</a>
-      </nav>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <p class="navbar-brand">Z</p>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="process.html" target="_blank">Process</a></li>
+        <li><a href="" target="_blank">Partners</a></li>
+        <li><a href="" target="_blank">Log In</a></li>
+        <li><a href="signup.html" target="_blank">Sign-Up</a></li>
+      </ul>
     </div>
+  </div>
+      </nav>
 
-  <section class="title">
+  <section class="jumbotron">
+    <div class="title">
     <h1>Zurila</h1>
     <h2> Impacting Lives through Pocket Change</h2>
-    <a href ="" target="_blank"><button class="button">Donate</button></a>
+    <a href ="donate.html" target="_blank"><button class="button">Donate</button></a>
+  </div>
   </section>
 
-  <article class="card1">
-    <h3 class="card_title">Smart Spending</h3>
+  <article class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+    <h3 id="mission">Smart Spending</h3>
     <p class="card_text">
       We are striving to help people through source crowdfunding of pocket change.
       We want to give people of all walks of life the same opportunity.
+      We want to revitalize and bring value to pocket change.
+      Majority of people are inconvenienced by pocket change and see no value in them.
+      Zurila attempts to teach the value in the little things, no matter how big or small.
     </p>
-    <a href ="mission.html" target="_blank"><button class="button">Learn More</button></a>
+    <!-- <a href ="mission.html" target="_blank"><button class="button">Learn More</button></a> -->
+  </div>
+  <span class="glyphicon glyphicon-usd logo">
+  </span>
+</div>
   </article>
 
-  <article class="card2">
+<div class="container-bg">
+  <article class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-globe logo">
+        </span>
+      </div>
+      <div class="col-sm-8">
     <h3 class="card_title">How it Works:</h3>
     <p class="card_text">
       A weighted monthly drawing from the pool of donors with prizes that is dependent on donations.
+      Prizes are divided 50% towards the winner of the pool and the other 50% to the charity
+      chosen.
     </p>
-    <a href ="" target="_blank"><button class="button">More Information</button></a>
-  </article>
+    <a href ="process.html" target="_blank"><button class="button2">More Information</button></a>
+  </div>
+</div>
+</article>
+</div>
 
-  <article class="card3">
+  <article class="container-fluid text-center">
     <h3 class="card_title">Partners</h3>
     <p class="card_text">
       Zurila partners with multiple organizations and charities and splits the prize pool with them,
       truly making impactful changes one step at a time.
     </p>
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://www.evanstonscholars.org/uploads/8/3/1/6/83165322/es-office-workshop_orig.jpg" alt="evanstonscholars">
+          <p> Evanston Scholars </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://dailynorthwestern.com/wp-content/uploads/2019/03/Block10_AllieGoulding-1-900x601.jpg" alt="evanstoncommunityfoundation">
+          <p> Evanston Community Foundation </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://media.licdn.com/dms/image/C510BAQH1rQ0v2VfWzw/company-logo_200_200/0?e=2159024400&v=beta&t=ZZC0bxio0Rmy9gXZHbMGQulFJR93YCnw7vfESubxQgg" alt="allianceforthegreatlakes">
+          <p> Alliance for the Great Lakes </p>
+        </div>
+      </div>
   </article>
 
-  <article class="card4">
-    <div class="featured_image" style="background-image: url('placeholder')"></div>
-    <button class="prev">&lsaquo;</button>
-    <button class="next">&rsaquo;</button>
-
-  <section class="footer">
+  <footer class="container-fluid2 text-center">
     <h4 class="footer_title">Creators:</h4>
     <p class="footer_text">
-      <ul>
-        <li> Kim Calica </li>
-        <li> John Drake </li>
-      </ul>
-      </p>
-   <h4 class="footer_title2">Special Thanks To:</h4>
-   <p class="footer_text">
-     <ul>
-       <li> Sarah Van Wart </li>
-       <li> The Garage </li>
-       <li> Friends </li>
-       <ul>
-    </section>
+      Kim Calica, John Drake, Sarah Van Wart
+    </p>
+    </footer>
 
+<script text="text/javascript" src="index.js"></script>
 
-</div>
 </body>
 </html>

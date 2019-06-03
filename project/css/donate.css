@@ -4,33 +4,141 @@
 .active {
   text-align: center;
 }
-
-h2 {
+body{
+	text-align: center;
+	background: #F8F8F8;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+}
+h1{
+  color: #396;
+  font-weight: 100;
   font-size: 40px;
   margin: 40px 0px 20px;
 }
-
-#clockdiv {
-  display: inline-block;
-  text-align: center;
-  font-size: 30px;
+#clockdiv{
+	font-family: sans-serif;
+	color: #000;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 80px;
 }
-
-#clockdiv > div {
-  padding: 10px;
-  border-radius: 3px;
-  border: 2px solid black;
-  display: inline-block;
+#clockdiv > div{
+	padding: 30px;
+	border-radius: 3px;
+	background: #fff;
+	display: inline-block;
+  border: solid 2px black;
 }
-
-#clockdiv div > span {
-  padding: 15px;
-  border-radius: 3px;
-  border: 2px solid black;
-  display: inline-block;
+#clockdiv div > span{
+	padding: 30px;
+	border-radius: 3px;
+	background: #fff;
+	display: inline-block;
+  /* border: solid 2px black; */
 }
-
 .timer_text{
   padding-top: 5px;
-  font-size: 16px;
+  font-size: 32px;
 }
+.coin p{
+  font-family: georgia;
+  font-style: italic;
+  position: absolute;
+  font-size: 28px;
+  z-index: 700;
+  top: 12px;
+  left: 21px;
+}
+.coin.bronze p{
+  color: rgba(223,182,103,1);
+}
+.coin.silver p{
+  color: rgba(160,160,160,1);
+}
+.coin.gold p, .coin.gold2 p{
+  color: rgba(242,215,50,1);
+}
+
+.coin{
+  cursor: pointer;
+  content: "";
+  width: 74px;
+  height: 74px;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  top: 6px;
+  border-radius: 50px;
+  z-index: 500;
+  box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.coin:hover{
+  top: -1px;
+  transition: all .5s ease-in-out;
+  box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, .2);
+}
+
+.bronze{
+  background: linear-gradient(45deg,
+    rgba(223,182,103,1) 0%,
+    rgba(249,243,232,1) 56%,
+    rgba(231,192,116,1) 96%);
+}
+
+.silver{
+  background: linear-gradient(45deg,
+    rgba(160,160,160,1) 0%,
+    rgba(232,232,232,1) 56%);
+}
+.gold, .gold2 {
+  background: linear-gradient(45deg,
+  rgba(242,215,12,1) 0%,
+  rgba(255,255,255,1) 56%,
+  rgba(252,235,0,1) 96%);
+}
+
+button {
+  border-radius: 100px;
+  border: 0;
+  background-color: #F8F8F8;
+}
+/* button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+} */
+.navbar {
+  margin-bottom: 0;
+  background-color: #1B1313;
+  z-index: 9999;
+  border: 0;
+  font-size: 13px;
+  line-height: 1.42857143;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+  font-size: 45px;
+  /* font-family: 'Alfa Slab One'; */
+  font-family: 'Carter One', cursive;
+  color: white;
+}
+.jumbotron {
+  /* background-color: #f4511e; */
+  background: linear-gradient(to bottom left, #ff9933 0%, #ff0000 100%);
+  color: white;
+  text-align: center;
+  /* font-family: 'Alfa Slab One'; */
+  height: 510px;
+}
+a:hover {
+  color:white !important;
+}
+/* .prize_text {
+  font-size: 18px !important;
+} */

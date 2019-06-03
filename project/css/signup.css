@@ -4,3 +4,68 @@
 .successactive {
   display: block;
 }
+.navbar {
+  margin-bottom: 0;
+  background-color: #1B1313;
+  z-index: 9999;
+  border: 0;
+  font-size: 13px;
+  line-height: 1.42857143;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+  font-size: 45px;
+  /* font-family: 'Alfa Slab One'; */
+  font-family: 'Carter One', cursive;
+  color: white;
+}
+.jumbotron {
+  /* background-color: #f4511e; */
+  background: linear-gradient(to bottom left, #ff9933 0%, #ff0000 100%);
+  color: white;
+  text-align: center;
+  /* font-family: 'Alfa Slab One'; */
+  height: 100vh;
+}
+.box_logo {
+  font-family: 'Carter One', cursive;
+  font-size: 75px !important;
+  color: black !important;
+}
+.box_login {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  color: black;
+  line-height: 30px;
+}
+button {
+  margin-top: 20px;
+}
+a:hover {
+  color:white !important;
+}
+h3 {
+  font-size: 27px;
+  line-height: 1.375em;
+  font-weight: 400;
+  margin-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+.footer {
+  text-align: left !important;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  color: black;
+}
+.footer_title {
+  font-size: 25px;
+}
+.footer_text{
+  font-size: 15px !important;
+}
+hr {
+  border: black solid 0.5px;
+}
