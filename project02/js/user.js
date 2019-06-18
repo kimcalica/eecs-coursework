@@ -29,6 +29,7 @@ const geocode_thenadduser = ()=> {
 
 };
 const addNewUser = (lat,long) => {
+    document.querySelector('.success').className = 'successactive';
     // 1. get user-generated data:
     const name = document.querySelector('#name').value;
     const stype = document.querySelector('#service_type').value;
@@ -59,6 +60,7 @@ const addNewUser = (lat,long) => {
         // 3. print the results to the screen
         console.log(data);
     });
+      document.getElementById('fill').reset();
 };
 
 // 4. attach function to button:
